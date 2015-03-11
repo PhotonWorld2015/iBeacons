@@ -1,4 +1,4 @@
-/*
+cordova.define("com.unarin.cordova.beacon.LocationManager", function(require, exports, module) { /*
  Licensed to the Apache Software Foundation (ASF) under one
  or more contributor license agreements.  See the NOTICE file
  distributed with this work for additional information
@@ -58,7 +58,6 @@ LocationManager.prototype.bindMethodContexts = function() {
 	this.disableDebugLogs = _.bind(this.disableDebugLogs, this);
 	this.enableDebugLogs = _.bind(this.enableDebugLogs, this);
 };
-
 
 LocationManager.prototype.getDelegate = function() {
 	return this.delegate;
@@ -544,6 +543,7 @@ LocationManager.prototype.appendToDeviceLog = function(message) {
 	return this._promisedExec('appendToDeviceLog', [message], []);
 };
 
+               
 var locationManager = new LocationManager();
 locationManager.Regions = Regions;
 locationManager.Region = Region;
@@ -555,3 +555,5 @@ module.exports.LocationManager = LocationManager;
 module.exports.locationManager = locationManager;
 
 
+
+});
