@@ -54,6 +54,7 @@ var BeaconRegion = require('com.unarin.cordova.beacon.BeaconRegion');
  * 
  * @returns {undefined}
  */
+               
 LocationManager.prototype.bindMethodContexts = function() {
 	this.disableDebugLogs = _.bind(this.disableDebugLogs, this);
 	this.enableDebugLogs = _.bind(this.enableDebugLogs, this);
